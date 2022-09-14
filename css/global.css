@@ -4,12 +4,18 @@
     --modo-escuro-dias: #413F42;
     --modo-escuro-hover: #393E46;
     --modo-escuro-letra: #EEEEEE;
+    --modo-escuro-botao: #343434;
+    --modo-botao-hover: #C65F63;
+    --modo-hover-dia: #630000;
 
     --light-body: #F9F9F9;
     --light-principal: #F7F6DC;
     --light-dias: #B1D7B4;
-    -light-hover: #FFF9CA;
+    --light-hover: #D6D5A8;
     --light-letra: #3D3C42;
+    --light-botao: #E0DDAA;
+    --light-botao-hover: #C5A880;
+    --light-hover-dia: #F5ECBC;
 
     --sombra:rgba(56, 56, 56, 1) 1px 7px 30px 2px;
 

@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+.dark{
+    --bg-body: var(--modo-escuro-body);
+    --bg-main: var(--modo-escuro-principal);
+    --bg-second: var(--modo-escuro-dias);
+    --color-hover: var(--modo-escuro-hover);
+    --color-text: var(--modo-escuro-letra);
+    --hover-botao: var(--modo-escuro-botao);
+    --bg-btn-hover: var(--modo-botao-hover);
+    --hover-dia: var(--modo-hover-dia);
+}
+
+.estilo-clean {
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-principal);
+    --bg-second: var(--light-dias);
+    --color-hover: var(--light-hover);
+    --color-text: var(--light-letra);
+    --hover-botao: var(--light-botao);
+    --bg-btn-hover: var(--light-botao-hover);
+    --hover-dia: var(--light-hover-dia);
+}
+
 
 html,
 body {
@@ -11,13 +33,13 @@ body {
     display: grid;
     place-items: center;
     font-family: var(--fonte);
-    background-color: var(--light-body);
+    background-color: var(--bg-body);
 }
 
 .calendario {
     height: max-content;
     width: max-content;
-    background-color: var(--light-principal);
+    background-color: var(--bg-main);
     padding: 1.2rem;
     border-radius: 25px;
     position: relative;
@@ -34,7 +56,7 @@ body {
     align-items: center;
     padding: 0.9rem;
     font-size: 1.2rem;
-    color: var(--light-letra);
+    color: var(--color-text);
     font-weight: 600;
 }
 
@@ -47,7 +69,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-weight: 600;
     height: 3.1rem;
-    color: var(--light-dias);
+    color: var(--bg-second);
 }
 
 .semanas-dias div {
@@ -59,7 +81,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2px;
-    color: var(--light-letra);
+    color: var(--color-text);
     cursor: pointer;
 }
 
@@ -72,3 +94,50 @@ body {
     padding: 0.3rem;
 
 }
+
+.dias-numero div:hover {
+    background-color:var(--hover-dia);;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.seleciona-ano{
+    display: flex;
+    align-items: center;
+}
+
+.muda-ano {
+    display: grid;
+    place-items: center;
+    margin: 0 0.3rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.muda-ano:hover {
+    background-color: var(--color-hover);
+}
+
+.mudar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modo-calendario{
+    padding: 0.3rem;
+    border: 2.2px solid #203239;
+    border-radius: 25px;
+    background-color: var(--hover-botao);
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.modo-calendario:hover {
+    background-color: var(--bg-btn-hover);
+    box-shadow: rgba(56, 56, 56, 1) 2px 2px 6px 2px;
+    transition-delay: 0.2s;
+}
+
