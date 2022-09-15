@@ -101,6 +101,13 @@ body {
     font-weight: 700;
 }
 
+.dias-numero div.data-atual,
+.dias-numero div.data-atual:hover{
+    background-color: #3FA796;
+    color: white;
+    border-radius: 50%;
+}
+
 .seleciona-ano{
     display: flex;
     align-items: center;
