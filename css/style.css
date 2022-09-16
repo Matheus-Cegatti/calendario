@@ -83,6 +83,7 @@ body {
     gap: 2px;
     color: var(--color-text);
     cursor: pointer;
+    
 }
 
 .dias-numero div {
@@ -92,10 +93,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0.3rem;
-
 }
 
-.dias-numero div:hover {
+.dias-numero-hover:hover{
     background-color:var(--hover-dia);;
     border-radius: 50%;
     font-weight: 700;
