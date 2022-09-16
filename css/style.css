@@ -95,7 +95,7 @@ body {
     padding: 0.3rem;
 }
 
-.dias-numero-hover:hover{
+.dias-numero-hover:hover:not(.data-atual){
     background-color:var(--hover-dia);;
     border-radius: 50%;
     font-weight: 700;
