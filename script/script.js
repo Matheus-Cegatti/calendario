@@ -30,7 +30,7 @@ gerarCalendario = (mes, ano) => {
 
     let mesAtual = `${meses[mes]}`;
     console.log(mesAtual = `${meses[mes]}`);
-    console.log(mesAtual);
+    selecionaMes.innerHTML = mesAtual
     calendarioAno.innerHTML = ano;//define e coloca o ano
 
     let primeiroDia = new Date(ano, mes, 1); //define o dia 1 do mes (ele recebera a data atual no if com dataAtual.getDate())
@@ -56,6 +56,27 @@ gerarCalendario = (mes, ano) => {
         // console.log(diasDoCalendario.appendChild(dia));
         // console.log(diasDoCalendario);
     }
+}
+
+let listaMes = calendario.querySelector(".lista-meses")
+
+meses.forEach((evento, index)=> { //para cada mes ele recebe o nome (evento) e um numero (index), busco na lista de meses declarada no começo
+    let mes = document.createElement('div')
+    mes.innerHTML = `<div data-mes="${index}">${evento}<div>`
+    mes.querySelector('div').onclick = () => {
+        listaMes.classList.remove("show")
+        mesAtual.value = index;
+        gerarCalendario(mesAtual.value, anoAtual.value)
+        // console.log(listaMes);
+    }
+ listaMes.appendChild(mes)
+})
+
+let selecionaMes = calendario.querySelector(".seleciona-mes");
+
+    selecionaMes.onclick = () => {
+    listaMes.classList.add("show")
+    // console.log("clicou");
 }
 
 
