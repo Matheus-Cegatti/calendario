@@ -7,6 +7,7 @@
     --modo-escuro-botao: #343434;
     --modo-botao-hover: #C65F63;
     --modo-hover-dia: #630000;
+    --modo-escuro-hover-mes: #007880;
 
     --light-body: #F9F9F9;
     --light-principal: #F7F6DC;
@@ -16,6 +17,7 @@
     --light-botao: #E0DDAA;
     --light-botao-hover: #C5A880;
     --light-hover-dia: #F5ECBC;
+    --light-hover-mes: #CACACA;
 
     --sombra:rgba(56, 56, 56, 1) 1px 7px 30px 2px;
 
