@@ -79,9 +79,12 @@ let selecionaMes = calendario.querySelector(".seleciona-mes");
     // console.log("clicou");
 }
 
-
-
-
+let mudaMes = calendario.querySelector(".btn-mes--atual");
+    
+mudaMes.onclick= () => {
+    console.log("clicou");
+    gerarCalendario(dataAtual.getMonth(), dataAtual.getFullYear(anoAtual))
+}
 
 let dataAtual = new Date()
 let mesAtual = {value: dataAtual.getMonth()}
