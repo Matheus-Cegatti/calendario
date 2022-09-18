@@ -195,3 +195,42 @@ body {
     padding: 0.05rem;
     
 }
+
+.texto-dia{
+    width: 60%;
+    height: 25%;
+    position: absolute;
+    gap: 0.3rem;
+    top: 40%;
+    left: 20%;
+    /* padding: 1.2rem; */
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(1.5);
+    /* background-color: blue; */
+    color: var(--color-text);
+    border-radius: 25px;
+}
+
+.texto-dia.aparece {
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem;
+}
+
+.btn-fechar {
+    position: absolute;
+    gap: 0.3rem;
+    top: 42%;
+    left: 22%;
+    visibility: hidden;
+    border-radius: 30%;
+    padding: 0.2rem;
+}
+
+.btn-fechar.aparece{
+    visibility: visible;
+    pointer-events: visible;
+}
