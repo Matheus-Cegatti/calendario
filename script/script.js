@@ -102,20 +102,27 @@ document.querySelector("#proximo-ano").onclick = () => {
     gerarCalendario(mesAtual.value, anoAtual.value)
 }
 
-let textoDia = document.querySelector(".texto-dia")
-let recado = document.createElement('div')
-recado.innerHTML = `<div data-recado></div>`
-document.querySelector(".dias-numero").onclick = () => {
-    console.log("click");
-    textoDia.classList.add("aparece")
-    btnFechar.classList.add("aparece") 
-    
-}
-textoDia.appendChild(recado)
+// textoDia.appendChild(recado)
+
+
 
 let btnFechar = document.querySelector(".btn-fechar");
 btnFechar.onclick = () => {
     console.log("botao");
     textoDia.classList.remove("aparece")
     btnFechar.classList.remove("aparece");
+}
+let textoDia = document.querySelector(".texto-dia")
+let recado = document.createElement('div')
+recado.innerHTML = `<div data-recado></div>`
+let todosDias = document.querySelectorAll(".dias-numero-hover");
+
+for(let i = 0; i < todosDias.length; i++) {
+    let diasSemana = todosDias[i];
+
+    diasSemana.onclick = function(){
+        console.log("Click dia");
+        textoDia.classList.add("aparece")
+    btnFechar.classList.add("aparece") 
+    }
 }
