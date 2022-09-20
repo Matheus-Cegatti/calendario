@@ -227,12 +227,15 @@ body {
 
 .btn-fechar {
     position: absolute;
-    gap: 0.3rem;
     top: 42%;
     left: 22%;
     visibility: hidden;
     border-radius: 30%;
     padding: 0.2rem;
+    background-color: #889EAF;
+    width: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .btn-fechar.aparece {
