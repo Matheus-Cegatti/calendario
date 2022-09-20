@@ -1,7 +1,7 @@
 :root {
     --modo-escuro-body: #7F8487;
     --modo-escuro-principal: #181818;
-    --modo-escuro-dias: #413F42;
+    --modo-escuro-dias: #2D4263;
     --modo-escuro-hover: #393E46;
     --modo-escuro-letra: #EEEEEE;
     --modo-escuro-botao: #343434;
@@ -22,4 +22,5 @@
     --sombra:rgba(56, 56, 56, 1) 1px 7px 30px 2px;
 
     --fonte:'Source Code Pro', monospace;
+    --border: #0C4271;
 }

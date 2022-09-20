@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.dark{
+.dark {
     --bg-body: var(--modo-escuro-body);
     --bg-main: var(--modo-escuro-principal);
     --bg-second: var(--modo-escuro-dias);
@@ -66,7 +66,7 @@ body {
     padding: 0.9rem;
 }
 
-.semanas-dias{
+.semanas-dias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-weight: 600;
@@ -85,7 +85,7 @@ body {
     gap: 2px;
     color: var(--color-text);
     cursor: pointer;
-    
+
 }
 
 .dias-numero div {
@@ -102,20 +102,21 @@ body {
     position: absolute;
 }
 
-.dias-numero-hover:hover:not(.data-atual){
-    background-color:var(--hover-dia);;
+.dias-numero-hover:hover:not(.data-atual) {
+    background-color: var(--hover-dia);
+    ;
     border-radius: 50%;
     font-weight: 700;
 }
 
 .dias-numero div.data-atual,
-.dias-numero div.data-atual:hover{
+.dias-numero div.data-atual:hover {
     background-color: #3FA796;
     color: white;
     border-radius: 50%;
 }
 
-.seleciona-ano{
+.seleciona-ano {
     display: flex;
     align-items: center;
 }
@@ -139,7 +140,7 @@ body {
 }
 
 .modo-calendario,
-.btn-mes--atual{
+.btn-mes--atual {
     padding: 0.3rem;
     border: 2.2px solid #203239;
     border-radius: 25px;
@@ -149,7 +150,7 @@ body {
     cursor: pointer;
 }
 
-.btn-mes--atual{
+.btn-mes--atual {
     margin-right: 50%;
 }
 
@@ -188,28 +189,30 @@ body {
     padding: 0.5rem;
 }
 
-.lista-meses > div:hover {
+.lista-meses>div:hover {
     background-color: var(--hover-mes);
     border-radius: 30px;
     cursor: pointer;
     padding: 0.05rem;
-    
+
 }
 
-.texto-dia{
+.texto-dia {
     width: 60%;
     height: 25%;
     position: absolute;
-    gap: 0.3rem;
     top: 40%;
     left: 20%;
-    /* padding: 1.2rem; */
     visibility: hidden;
     pointer-events: none;
     transform: scale(1.5);
-    /* background-color: blue; */
-    color: var(--color-text);
+    color: var(--light-letra);
     border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: var(--fonte);
+    border: 3.5px solid var(--border);
+    
 }
 
 .texto-dia.aparece {
@@ -218,6 +221,8 @@ body {
     pointer-events: visible;
     transition: all 0.2s ease-in-out;
     padding: 0.5rem;
+    padding-bottom: 2rem;
+    background-color: var(--bg-main);
 }
 
 .btn-fechar {
@@ -230,7 +235,7 @@ body {
     padding: 0.2rem;
 }
 
-.btn-fechar.aparece{
+.btn-fechar.aparece {
     visibility: visible;
     pointer-events: visible;
 }
