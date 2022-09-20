@@ -104,7 +104,6 @@ body {
 
 .dias-numero-hover:hover:not(.data-atual) {
     background-color: var(--hover-dia);
-    ;
     border-radius: 50%;
     font-weight: 700;
 }
@@ -206,7 +205,6 @@ body {
     visibility: hidden;
     pointer-events: none;
     transform: scale(1.5);
-    color: var(--light-letra);
     border-radius: 25px;
     font-weight: 700;
     font-size: 1rem;
@@ -223,6 +221,7 @@ body {
     padding: 0.5rem;
     padding-bottom: 2rem;
     background-color: var(--bg-main);
+    color: var(--color-text);
 }
 
 .btn-fechar {
@@ -241,4 +240,10 @@ body {
 .btn-fechar.aparece {
     visibility: visible;
     pointer-events: visible;
+}
+
+.selecionado {
+    background-color: #99A799;
+    border-radius: 50%;
+    font-weight: 700;
 }
