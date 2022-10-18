@@ -1,5 +1,8 @@
 # Calendario
 
+## Sumario
+[Sobre](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#sobre) -- [Como Funciona](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#como-funciona-o-projeto) -- [Tecnologias](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#tecnologias) -- [Video e Imagens](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#video-e-imagens) -- [Link](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#link) -- [Pré-Requisitos](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#pr%C3%A9-requisitos) -- [Autor](https://github.com/Matheus-Cegatti/calendario/edit/master/README.md#autor)
+
 ## Sobre
 
 Projeto desafiador de um calendário onde o usuario pode navegar pelos meses e anos e anotar eventos, lembranças ao clicar no dia.
@@ -26,7 +29,7 @@ Permite também ao usuario usar o modo escuro da tela.
 * CSS
 * JavaScript
 
-## Imagens e Video
+## Video e Imagens
 
 https://user-images.githubusercontent.com/111694128/196516562-f253d044-3c18-4a6f-87b5-3c72b3b5b32b.mp4
 
@@ -40,7 +43,7 @@ https://user-images.githubusercontent.com/111694128/196516562-f253d044-3c18-4a6f
 
 https://calendario-two.vercel.app/
 
-## Pré Requisito 
+## Pré-Requisitos
 
 Basta usar um navegador de sua preferência e conexão com internet.
 
