@@ -56,6 +56,32 @@ gerarCalendario = (mes, ano) => {
         // console.log(diasDoCalendario.appendChild(dia));
         // console.log(diasDoCalendario);
     }
+
+    let textoDia = document.querySelector(".texto-dia")
+    let recado = document.createElement('div')
+    recado.innerHTML = `<div data-recado></div>`
+    let todosDias = document.querySelectorAll(".dias-numero-hover");
+
+    for (let i = 0; i < todosDias.length; i++) {
+        let diasSemana = todosDias[i];
+
+        diasSemana.onclick = function () {
+            // console.log("Click dia");
+            textoDia.classList.add("aparece");
+            btnFechar.classList.add("aparece");
+            diasSemana.classList.add("selecionado");
+            console.log(diasSemana);
+        btnFechar.onclick = () => {
+            textoDia.classList.remove("aparece");
+            btnFechar.classList.remove("aparece");
+            diasSemana.classList.remove("selecionado")
+        }
+        
+    }
+
+    let btnFechar = document.querySelector(".btn-fechar");
+    
+    }
 }
 
 let listaMes = calendario.querySelector(".lista-meses")
@@ -111,34 +137,6 @@ document.querySelector("#proximo-ano").onclick = () => {
 //     btnFechar.classList.remove("aparece");
 
 // }
-
-
-let textoDia = document.querySelector(".texto-dia")
-let recado = document.createElement('div')
-recado.innerHTML = `<div data-recado></div>`
-let todosDias = document.querySelectorAll(".dias-numero-hover");
-
-for (let i = 0; i < todosDias.length; i++) {
-    let diasSemana = todosDias[i];
-
-    diasSemana.onclick = function () {
-        // console.log("Click dia");
-        textoDia.classList.add("aparece");
-        btnFechar.classList.add("aparece");
-        diasSemana.classList.add("selecionado");
-        console.log(diasSemana);
-        btnFechar.onclick = () => {
-            textoDia.classList.remove("aparece");
-            btnFechar.classList.remove("aparece");
-            diasSemana.classList.remove("selecionado")
-        }
-        
-    }
-
-    let btnFechar = document.querySelector(".btn-fechar");
-
-
-}
 
 
 
